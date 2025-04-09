@@ -83,6 +83,7 @@ Alle anzeigen
             </div>
               {/* Image */}
                 <img 
+                loading="lazy"
                   src={groupImage}
                   alt="event"
                   className="md:max-w-[200px] xs:w-screen  "
