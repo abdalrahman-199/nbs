@@ -4,11 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import logo from "../assets/nbslogo.svg";
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
   const navLinks = [
     "Startseite",
     "Aktivitäten",
@@ -19,7 +17,6 @@ const Navbar = () => {
     "Über uns",
   ];
 
-  // Track the scroll position
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 680) {
@@ -103,8 +100,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Azan Section */}
-      <AzanSection />
     </>
   );
 };

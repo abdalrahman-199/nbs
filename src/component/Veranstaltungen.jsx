@@ -8,7 +8,7 @@ const events = [
     title: "Koran, Hadith im täglichen",
     description:
       "Odio scelerisque maecenas odio nulla. Mollis platea vulputate vel lectus viverra augue sapien. Pharetra consequat imperdiet eu.",
-    image: "/card2.png", // make sure this path exists
+    image: "/card2.png",
   },
   {
     id: 2,
@@ -27,11 +27,11 @@ const CardItem = ({ title, description, image }) => (
         alt={title}
         fill
         className=""
-        style={{width:"100%"}}
+        style={{ width: "100%" }}
       />
     </div>
     <CardContent className="p-6">
-     
+
       <h3 className="text-lg font-semibold text-[#1D3557] mb-2">{title}</h3>
       <p className="text-gray-700 text-sm">{description}</p>
     </CardContent>
