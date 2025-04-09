@@ -69,7 +69,7 @@ const Navbar = () => {
           {/* Burger Menu for Mobile */}
           <div >
             <Sheet open={open} onOpenChange={setOpen} >
-              <SheetTrigger asChild>
+              <SheetTrigger asChild className="lg:hidden flex">
                 <Button variant="ghost" size="icon" className="text-white">
                   <Menu className="w-6 h-6 text-custom-green " />
                 </Button>
