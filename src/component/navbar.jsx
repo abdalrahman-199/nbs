@@ -67,14 +67,14 @@ const Navbar = () => {
           </div>
 
           {/* Burger Menu for Mobile */}
-          <div className="lg:hidden">
-            <Sheet open={open} onOpenChange={setOpen}>
+          <div >
+            <Sheet open={open} onOpenChange={setOpen} >
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="text-white">
                   <Menu className="w-6 h-6 text-custom-green " />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="bg-custom-green text-white p-6">
+              <SheetContent side="left" className="bg-custom-green text-white p-6 overflow-y-scroll">
                 <div className="flex flex-col gap-6 mt-10">
                   {navLinks.map((link) => (
                     <a
