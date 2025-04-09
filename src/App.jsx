@@ -7,29 +7,26 @@ import AzanSection from "./component/azanSection.jsx";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
         }, 2500);
-
         return () => clearTimeout(timer);
     }, []);
 
+    // Only show SplashPage initially, and delay rendering of the entire app
+    if (isLoading) {
+        return <SplashPage />;
+    }
+
     return (
-        <>
-            {isLoading ? (
-                <SplashPage />
-            ) : (
-                <>
-                    <div className="root_element">
-                        <Navbar />
-                        <AzanSection />
-                        <Aktivitaten />
-                        <Veranstaltungen />
-                    </div>
-                </>
-            )}
-        </>
+        <div className="root_element">
+            <Navbar />
+            <AzanSection />
+            <Aktivitaten />
+            <Veranstaltungen />
+        </div>
     );
 }
 
