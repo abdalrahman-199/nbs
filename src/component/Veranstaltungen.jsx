@@ -45,7 +45,7 @@ export default function Veranstaltungen() {
         Veranstaltungen
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-8">
         {events.map((event) => (
           <CardItem key={event.id} {...event} />
         ))}
