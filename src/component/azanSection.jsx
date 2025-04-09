@@ -100,7 +100,7 @@ export default function AzanSection() {
         {/* Salah Buttons */}
         <div
           style={{ overflowX: "scroll", scrollbarWidth: "none", }}
-          className="grid grid-cols-1 gap-[20px] mt-[50px] mb-[60px] pb-[14px] md:mt-[100px] w-full md:px-4 overflow-x-auto"
+          className="grid grid-cols-1 gap-[20px] md:mt-[100px] mt-[50px] md:mb-[60px] mb-[0px] pb-[14px]  w-full md:px-4 overflow-x-auto"
         >
           <div className="flex gap-[12px] mx-auto" style={{ width: "max-content" }}>
             {salahTimes.map(({ name, time, img }) => (

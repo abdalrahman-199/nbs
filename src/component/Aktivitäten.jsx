@@ -2,7 +2,7 @@ import React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Clock, MapPin } from "lucide-react"
-import groupImage from "../assets/groupImage.svg"
+import groupImage from "../assets/groupImage.png"
 import bg from "../assets/bgImg.svg"
 export default function Aktivitaten() {
   const dummyEvents = [
@@ -11,7 +11,7 @@ export default function Aktivitaten() {
       monthYear: "May 2025",
       time: "8:00 am",
       location: "Downtown, USA",
-      title: "Deutschsprachiger Islamunterricht für Jugendliche",
+      title: "Ramadan Vorbereitungsseminar",
       description:
         "Gemeinsam mit unserem Jugendverein, dem Islamischen Jugendzentrum Berlin, bieten wir diesen Islamischen Unterricht komplett auf Deutsch an.",
     },
@@ -19,7 +19,7 @@ export default function Aktivitaten() {
       date: "28",
       monthYear: "May 2025",
       time: "4:00 pm",
-      location: "Berlin, Germany",
+      location: "Downtown, USA",
       title: "Workshop für junge Muslime",
       description:
         "Gemeinsam mit unserem Jugendverein, dem Islamischen Jugendzentrum Berlin, bieten wir diesen Islamischen Unterricht komplett auf Deutsch an.",
@@ -28,7 +28,7 @@ export default function Aktivitaten() {
       date: "03",
       monthYear: "June 2025",
       time: "2:00 pm",
-      location: "Hamburg, Germany",
+      location: "Downtown, USA",
       title: "Quran Studienkreis",
       description:
       "Gemeinsam mit unserem Jugendverein, dem Islamischen Jugendzentrum Berlin, bieten wir diesen Islamischen Unterricht komplett auf Deutsch an.",
@@ -37,7 +37,7 @@ export default function Aktivitaten() {
       date: "10",
       monthYear: "June 2025",
       time: "6:30 pm",
-      location: "Munich, Germany",
+      location: "Downtown, USA",
       title: "Ramadan Vorbereitungsseminar",
       description:
       "Gemeinsam mit unserem Jugendverein, dem Islamischen Jugendzentrum Berlin, bieten wir diesen Islamischen Unterricht komplett auf Deutsch an.",
@@ -76,7 +76,7 @@ Alle anzeigen
          
 
             {/* Content */}
-            <CardContent className="font-custom flex flex-col sm:flex-row  p-4 sm:p-8 lg:p-[35px] md:p-[15px]  gap-8 ">
+            <CardContent className="font-custom flex flex-col sm:flex-row  p-4 sm:p-8 lg:p-[35px] md:p-[15px]  lg:gap-8 gap-4 ">
             <div className="hidden  sm:w-24 w-full md:flex sm:flex-col flex-row sm:items-center items-start justify-between sm:justify-center bg-white  p-2 sm:p-0">
               <span className="text-3xl font-bold text-[#B3C352]">{event.date}</span>
               <span className="text-sm text-gray-500">{event.monthYear}</span>
@@ -85,7 +85,7 @@ Alle anzeigen
                 <img 
                   src={groupImage}
                   alt="event"
-                  className="md:max-w-[200px] xs:w-screen "
+                  className="md:max-w-[200px] xs:w-screen  "
                 />
 
               {/* Info */}
